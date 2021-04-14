@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/home.css" />
+  <link rel="stylesheet" href="./css/gal.css" />
+  <link href="https://fonts.gstatic.com" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Rosario&display=swap" rel="stylesheet" />
+  <title>Hands for Hunger</title>
+
+
+  <script>
+    var slideIndex = 4;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+  </script>
+
+  <style>
+    .mySlides {
+      display: none;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <style>
+
+  </style>
+
+  <body>
+
+    <section style="min-height: 100px;">
+      <div class="navigation">
+        <header>
+          <a href="/">
+            <div class="logo"><img src="../imgs/Frame 1final.svg" alt="logo" width="222" height="68"></div>
+          </a>
+          <nav>
+            <ul>
+              <li><a href="./index.php">Home</a></li>
+              <li><a href="./aboutus.html">AboutUs</a></li>
+              <li><a href="./contactus.php">contactUs</a></li>
+              <!-- <li><a href="user/posts"> volunteer </a></li> -->
+
+              <li><a href="./login.php">signin</a></li>
+              <li><a href="./signup.php">signup</a>
+                <!-- <ul> 
+                            <li><a href="scribe_signup">As Scribe</a></li>
+                            <li><a href="student_signup">As student</a></li>
+                        </ul>-->
+              </li>
+
+
+            </ul>
+          </nav>
+
+        </header>
+
+    </section>
+
+    <div class="container">
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img src="./../imgs/gal/img1 (1).png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <img src="./../imgs/gal/img1 (2).png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+        <img src="./../imgs/gal/img1 (3).png" style="width:100%">
+      </div>
+
+      <div class="mySlides" style="display: block;">
+        <div class="numbertext">4 / 6</div>
+        <img src="./../imgs/gal/img1 (4).png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+        <img src="./../imgs/gal/img1 (5).png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img src="./../imgs/gal/img1 (6).png" style="width:100%">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="./../imgs/gal/img1 (1).png" style="width:100%" onclick="currentSlide(1)"
+            alt="Food">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./../imgs/gal/img1 (2).png" style="width:100%" onclick="currentSlide(2)"
+            alt="Packing the Food ">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./../imgs/gal/img1 (3).png" style="width:100%" onclick="currentSlide(3)"
+            alt="Volunteers">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./../imgs/gal/img1 (4).png" style="width:100%" onclick="currentSlide(4)"
+            alt="Happy Children">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./../imgs/gal/img1 (5).png" style="width:100%" onclick="currentSlide(5)"
+            alt="Distributing the Food">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./../imgs/gal/img1 (6).png" style="width:100%" onclick="currentSlide(6)"
+            alt="Happy Children">
+        </div>
+      </div>
+    </div>
+    <section class="sec3">
+
+
+      <p class="sec3p sec3p2">We aim to redistribute surplus food to those who are in need of it. If you have excess
+        food from an event, party,
+        wedding etc, please Singnup and provide details, our NGO'S width volunteers will collect the excess food from
+        you and distribute it among
+        people who need it. The excess food will be checked for quality because lack of proper refrigeration and storage
+        tend to
+        spoil food.</p>
+      <!-- <button class="sec3but">join us as volunteer</button> -->
+      <a href="./signup.php"> <button class="todonate sec3but2 ">Signup To Donate NOW</button></a>
+
+
+
+      </div>
+    </section>
+
+
+
+
+  </body>
+
+</html>

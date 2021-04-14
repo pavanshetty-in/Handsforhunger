@@ -1,0 +1,76 @@
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+th {
+  background-color: #266f8f;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  font-family: "Rosario", sans-serif;
+}
+
+td {
+  text-align: center;
+  padding: 16px;
+  font-family: "Rosario", sans-serif;
+}
+
+tr:nth-child(even) {
+  background-color: #d7ebf4;
+}
+h2 {
+  font-family: "Rosario", sans-serif;
+
+  text-align: center;
+  padding: 10px;
+  font-size: 40px;
+}
+body {
+  margin: 0;
+}
+
+tr {
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+h4 {
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  font-size: 30px;
+  font-family: "Rosario", sans-serif;
+}
+.ngoname {
+  text-align: center;
+  color: white;
+  font-family: "Rosario", sans-serif;
+}
+.backbutton {
+  border-radius: 5px;
+  background-color: #36cc6d;
+  padding: 14px 20px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: auto;
+  float: left;
+  position: fixed;
+  top: 25px;
+  outline: none;
+}
+.aprovebtn
+{
+ border-radius: 5px;
+  background-color: #36cc6d;
+  padding: 14px 20px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: auto; 
+  outline: none;
+  
+}
